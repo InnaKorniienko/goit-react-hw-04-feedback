@@ -40,7 +40,7 @@ const onLeaveFeedback = e => {
   return (
     <div className={css.feedback}>
        <Section title="Please leave feedback">
-               <FeedbackOptions options={[ "good", "neutral", "bad" ]} onLeaveFeedback={onLeaveFeedback} />
+               <FeedbackOptions options={Object.keys({good, neutral, bad})} onLeaveFeedback={onLeaveFeedback} />
            </Section>
 
        {total === 0 ? (
